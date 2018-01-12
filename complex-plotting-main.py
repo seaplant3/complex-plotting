@@ -34,10 +34,10 @@ def lin_contourfunc(x):
 
 def log_contourfunc(x):
     # Parameters:
-    T=1 #T=np.e    # log base
+    T=np.e    # log base, use np.e for natural log
     b=0.00    # mark when b+|f(z)|/T is within ~0.06 of an integer. E.g. b=-0.07 marks the biggest region around zeroes, b=0.07 doesn't mark zeroes. (Estimates are for t~5, increase |b| if you increase t)
     t=10      # thickness of contours (0-100) (~5 is usually good, 50 is quite thick)
-    return 1/(1 + np.power(10, t-500*((cos((2*pi*np.log(abs(x))/T)+(1+b)*pi)+1)/2)))
+    return 1/(1 + np.power(10, t-500*((cos((2*pi*np.log(abs(x))/np.log(T))+(1+b)*pi)+1)/2)))
 
 ########## Don't modify things below this line (unless you want to) ##########
 
@@ -201,13 +201,13 @@ idView = View(Item('idScene', editor=SceneEditor(scene_class=MayaviScene),height
                     '_', 'idInclSphereArg', 'idInclSphereMag', 'idInclPlaneArg', 'idInclPlaneMag',
                  ),
             Item('syncButton', show_label=False),
-            resizable=True,
+            resizable=True, title='z - identity'
             )
 fView = View(Item('fScene', editor=SceneEditor(scene_class=MayaviScene),height=250, width=300, show_label=False), #, show_label=False),
             Group(
                     '_', 'fInclSphereArg', 'fInclSphereMag', 'fInclPlaneArg', 'fInclPlaneMag',
                  ),
-            resizable=True,
+            resizable=True, title='f(z) - as defined under the line "def f(z):" '
             )
 
 myaviModel = MyaviModel()
