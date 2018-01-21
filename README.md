@@ -12,13 +12,13 @@ As an amateur Pythoneer, much credit and thanks is due to the authors of the exa
 - Peter Wang (handling multiple TraitsUI windows): http://markmail.org/download.xqy?id=xwknkqhqh4uvs5bf&number=1
 
 ## Set-up instructions:
-This is Python code. I recommend cut-and-pasting it into a Jupyter notebook cell (http://jupyter.org/install) and pressing shift+enter, but you can also just execute 'python /path/to/where/you/downloaded/complex-plotting-main.py' in your terminal if you have Python 2.7 installed. If you don't, or you encounter problems, read on. If your problem is just that you're using Windows, I recommend Linux (but in the meantime the command you need is probably 'C:\python27\python.exe C:\path\to\where\you\downloaded\complex-plotting-main.py').
+This is Python code. I recommend cut-and-pasting it into a Jupyter notebook cell (http://jupyter.org/install) and pressing shift+enter, but you can also just execute `python /path/to/where/you/downloaded/complex-plotting-main.py` in your terminal if you have Python 2.7 installed. If you don't, or you encounter problems, read on. If your problem is just that you're using Windows, I recommend Linux (but in the meantime the command you need is probably `C:\python27\python.exe C:\path\to\where\you\downloaded\complex-plotting-main.py`).
 
 If you don't have Python 2.7 or the Mayavi module installed already, I recommend these steps. This will build a special python environment with just the packages you need for this code, to prevent Mayavi's dependencies from conflicting with anything else (like matplotlib). Terminal commands are for Linux, but should work with little alteration on other systems.
 1) Install Anaconda, Python 2.7 version: https://www.anaconda.com/download/
-2) Create a clean new environment by running 'conda create -n myEnvName python=2.7'
-3) Switch into this environment by running 'source activate myEnvName'. (myEnvName) should appear in your terminal prompt.
-4) Install the mayavi and jupyter packages in this environment: run 'conda install mayavi' and then 'conda install jupyter'
-5) Run the code! Either run 'jupyter notebook' and cut-and-paste the code into a notebook cell, or run 'python /path/to/where/you/downloaded/complex-plotting-main.py'. Just make sure to run 'source activate myEnvName' first if it isn't already showing up in your terminal prompt.
+2) Create a clean new environment by running `conda create -n myEnvName python=2.7`
+3) Switch into this environment by running `source activate myEnvName`. (myEnvName) should appear in your terminal prompt.
+4) Install the mayavi and jupyter packages in this environment: run `conda install mayavi` and then `conda install jupyter`
+5) Run the code! Either run `jupyter notebook` and cut-and-paste the code into a notebook cell, or run `python /path/to/where/you/downloaded/complex-plotting-main.py`. Just make sure to run `source activate myEnvName` first if it isn't already showing up in your terminal prompt.
 
 Note that it might take ~15 seconds to start, and will probably throw some warnings like 'overflow' or 'invalid value' while it does its calculations. This is normal.
