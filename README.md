@@ -23,4 +23,4 @@ If you don't have Python 2.7 or the Mayavi module installed already, I recommend
 
 Note that it might take ~15 seconds to start, and will probably throw some warnings like 'overflow' or 'invalid value' while it does its calculations. This is normal.
 
-Questions or comments? I'd love to hear it! Leave them here on GitHub, send me an [email](cplant@berkeley.edu), or fox them to me.
+Questions or comments? I'd love to hear it! Leave them here on GitHub, send me an email (cplant@berkeley.edu), or fox them to me.
