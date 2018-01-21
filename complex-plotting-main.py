@@ -1,3 +1,4 @@
+from __future__ import division
 from numpy import arange, pi, cos, sin, tan
 
 from traits.api import HasTraits, Range, Bool, Button, Instance, \
@@ -9,7 +10,6 @@ from mayavi.core.ui.api import MayaviScene, SceneEditor, \
 
 from mayavi import mlab
 import numpy as np
-from __future__ import division
 import colorsys
 
 ########## Modify things in this section: ##########
