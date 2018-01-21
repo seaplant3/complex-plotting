@@ -22,3 +22,5 @@ If you don't have Python 2.7 or the Mayavi module installed already, I recommend
 5) Run the code! Either run `jupyter notebook` and cut-and-paste the code into a notebook cell, or run `python /path/to/where/you/downloaded/complex-plotting-main.py`. Just make sure to run `source activate myEnvName` first if it isn't already showing up in your terminal prompt.
 
 Note that it might take ~15 seconds to start, and will probably throw some warnings like 'overflow' or 'invalid value' while it does its calculations. This is normal.
+
+Questions or comments? I'd love to hear it! Leave them here on GitHub, send me an [email](cplant@berkeley.edu), or fox them to me.
