@@ -12,7 +12,14 @@ As an amateur Pythoneer, much credit and thanks is due to the authors of the exa
 - Peter Wang (handling multiple TraitsUI windows): http://markmail.org/download.xqy?id=xwknkqhqh4uvs5bf&number=1
 
 ## Set-up instructions:
-This is Python code. I recommend cut-and-pasting it into a Jupyter notebook cell (http://jupyter.org/install) and pressing shift+enter, but you can also just execute `python /path/to/where/you/downloaded/complex-plotting-main.py` in your terminal if you have Python 2.7 installed. If you don't, or you encounter problems, read on. If your problem is just that you're using Windows, I recommend Linux (but in the meantime the command you need is probably `C:\python27\python.exe C:\path\to\where\you\downloaded\complex-plotting-main.py`).
+### If you don't have Python 2.7 installed (or aren't sure):
+Install it! I recommend the [Anaconda distribution](https://www.anaconda.com/download/), you'll need the Python 2.7 version.
+### If you already have Python installed:
+I recommend cut-and-pasting the contents of [complex-plotting-main.py](https://github.com/seaplant3/complex-plotting/blob/master/complex-plotting-main.py) into a [Jupyter](http://jupyter.org/install) notebook cell where you can edit it easily and press  shift+enter to run. You can also just run it from the terminal with `python /path/to/complex-plotting-main.py`. 
+
+###If Mayavi causes problems:
+
+in your terminal if you have Python 2.7 installed. If you don't, or you encounter problems, read on. If your problem is just that you're using Windows, I recommend Linux (but in the meantime the command you need is probably `C:\python27\python.exe C:\path\to\where\you\downloaded\complex-plotting-main.py`).
 
 If you don't have Python 2.7 or the Mayavi module installed already, I recommend these steps. This will build a special python environment with just the packages you need for this code, to prevent Mayavi's dependencies from conflicting with anything else (like matplotlib). Terminal commands are for Linux, but should work with little alteration on other systems.
 1) Install Anaconda, Python 2.7 version: https://www.anaconda.com/download/
