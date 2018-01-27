@@ -12,12 +12,20 @@ As an amateur Pythoneer, much credit and thanks is due to the authors of the exa
 - Peter Wang (handling multiple TraitsUI windows): http://markmail.org/download.xqy?id=xwknkqhqh4uvs5bf&number=1
 
 ## Set-up instructions:
-### If you don't have Python 2.7 installed (or aren't sure):
-Install it! I recommend the [Anaconda distribution](https://www.anaconda.com/download/), you'll need the Python 2.7 version.
+### If you don't have Python 2.7 installed:
+Install it! I recommend the [Miniconda distribution](https://conda.io/miniconda.html), you'll need the Python 2.7 version.
+You can then run the *conda-setup-script.sh* to get everything set up for Mayavi, the package that makes all this work. The script will open up the Jupyter notebook interface when it's done, you can just open `complex-plotting-jupyter-notebook.ipynb` and press shift+enter to run the code.
+
+Use the *reopen-script.sh* to pick up where you left off if you close Jupyter and come back later.
+
 ### If you already have Python installed:
 I recommend cut-and-pasting the contents of [complex-plotting-main.py](https://github.com/seaplant3/complex-plotting/blob/master/complex-plotting-main.py) into a [Jupyter](http://jupyter.org/install) notebook cell where you can edit it easily and press  shift+enter to run. You can also just run it from the terminal with `python /path/to/complex-plotting-main.py`. 
 
-###If Mayavi causes problems:
+**The Mayavi module might not work** or install at all depending on what other modules you have installed (such as matplotlib). If you have that problem—or you're using Python 3, or have other errors—the ***conda-setup-script.sh* should fix it.** If you don't have conda installed (most people already do) you can get it [here](https://conda.io/miniconda.html).
+
+Use the *reopen-script.sh* to pick up where you left off if you close Jupyter and come back later. Or, run `source activate complexPlottingEnv` before running `jupyter notebook` or `python ...` to load the settings for Mayavi.
+
+### If my BASH scripts don't work, or other problems occur:
 
 in your terminal if you have Python 2.7 installed. If you don't, or you encounter problems, read on. If your problem is just that you're using Windows, I recommend Linux (but in the meantime the command you need is probably `C:\python27\python.exe C:\path\to\where\you\downloaded\complex-plotting-main.py`).
 
